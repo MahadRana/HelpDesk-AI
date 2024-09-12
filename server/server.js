@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const { OpenAI } = require('openai');
-
+const cors = require('cors');
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY, 
 });
@@ -9,6 +9,11 @@ const openai = new OpenAI({
 const app = express()
 
 app.use(express.json())
+
+app.use(cors({
+    origin: 'http://your-ec2-public-ip:3000',  // Replace with your EC2 public IP and frontend port
+    methods: 'GET,POST,PUT,DELETE',
+}));  
 
 app.post('/help', async (req,res) => {
     const userMessage = req.body.message;
