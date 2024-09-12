@@ -11,7 +11,7 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-    origin: 'http://your-ec2-public-ip:3000',  // Replace with your EC2 public IP and frontend port
+    origin: 'http://18.191.134.254:3000',  // Replace with your EC2 public IP and frontend port
     methods: 'GET,POST,PUT,DELETE',
 }));  
 
