@@ -3,7 +3,7 @@ import {useState } from "react";
 function Home() {
     const [messages, setMessages] = useState([{
     role:"bot", 
-    content:"Hello, my name is HelpGPT! How can I help you with your PC today?"
+    content:"Hello, my name is HelpDesk AI! How can I help you with your PC today?"
 }])
     const [inputValue, setInputValue] = useState("")
 const handleSendMessage = async () => {
