@@ -1,5 +1,5 @@
 {
-  "proxy": "http://18.191.134.254:3000",
+  "proxy": "http://18.191.134.254:4000",
   "name": "client",
   "version": "0.1.0",
   "private": true,
