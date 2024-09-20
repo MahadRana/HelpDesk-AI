@@ -1,4 +1,5 @@
-import {useState } from "react";
+import React, {useState } from "react";
+import ReactMarkdown from 'react-markdown';
 
 function Home() {
     const [messages, setMessages] = useState([{
@@ -45,12 +46,10 @@ const handleSendMessage = async () => {
     <div className="chat-container">
         <div className="chat">
             {messages.map((message, index) => (
-            <div
-                key={index}
-                className={`message ${message.role === "bot" ? "bot" : "user"}`}
-            >
-                {message.content}
-            </div>
+              <ReactMarkdown key={index}
+              className={`message ${message.role === "bot" ? "bot" : "user"}`}>
+                    {message.content}
+              </ReactMarkdown>
             ))}
         </div>
         <div className="input-bar">
