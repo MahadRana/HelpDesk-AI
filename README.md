@@ -13,7 +13,7 @@ HelpDesk AI is an AI-powered chatbot application designed to help users diagnose
 - **Frontend**: React
 - **Backend**: Node.js, Express.js
 - **AI Integration**: OpenAI API for natural language processing
-- **Hosting**: AWS EC2 (Instance not currently running)
+- **Hosting**: AWS EC2
 
 ## Installation (for local development)
 
